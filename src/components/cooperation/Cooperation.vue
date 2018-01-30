@@ -5,7 +5,7 @@
       <ul class="process-content flex-row">
         <li class="process-item" v-for="item in abilityList">
           <img :src='item.img' />
-          <span class="info">{{item.info}}</span>
+          <span style="opacity: 0;" class="info">{{item.info}}</span>
         </li>
       </ul>
     </div>
@@ -31,11 +31,11 @@ export default {
         },
         {
           img:img2,
-          info:'北京华影欣荣影业有限责任公司'
+          info:'万事利集团有限公司'
         },
         {
           img:img3,
-          info:'北京资配易人工智能科技有限公司'
+          info:'新华联合冶金投资集团有限公司'
         },
         {
           img:img4,
