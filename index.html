@@ -4,6 +4,15 @@
     <meta charset="utf-8">
     <link rel="shortcut icon" href="./static/favicon.ico">
     <title>快点</title>
+    <script>
+      if(window.screen.width < 768) {
+        var oMeta = document.createElement('meta');
+        oMeta.name = "viewport";
+        oMeta.content = "width = device-width, initial-scale = 1.0, maximum-scale = 1.0, user-scalable = 0";
+        document.getElementsByTagName('head')[0].appendChild(oMeta);
+      }
+      
+    </script>
   </head>
   <body>
     <div id="app"></div>

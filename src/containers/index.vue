@@ -13,15 +13,6 @@
 </template>
 
 <script>
-import HeaderTab from 'components/header/Header.vue'
-import Category from 'components/category/Category.vue'
-import About from 'components/about/About.vue'
-import Advantage from 'components/goodsadvantage/GoodsAdvantage.vue'
-import Ability from 'components/abilityadvantage/AbilityAdvantage.vue'
-import Process from 'components/buyprocess/BuyProcess.vue'
-import Cooperation from 'components/cooperation/Cooperation.vue'
-import FreeSettled from 'components/freeSettled/FreeSettled.vue'
-import Contact from 'components/contact/Contact'
 export default {
   name: 'home',
   data () {
@@ -30,15 +21,15 @@ export default {
     }
   },
   components:{
-  	Category,
-  	HeaderTab,
-  	About,
-  	Advantage,
-  	Ability,
-  	Process,
-  	Cooperation,
-  	FreeSettled,
-  	Contact
+  	Category: () => import('components/category/Category.vue'),
+  	HeaderTab: () => import('components/header/Header.vue'),
+  	About: () => import('components/about/About.vue'),
+  	Advantage: () => import('components/goodsadvantage/GoodsAdvantage.vue'),
+  	Ability: () => import('components/abilityadvantage/AbilityAdvantage.vue'),
+  	Process: () => import('components/buyprocess/BuyProcess.vue'),
+  	Cooperation: () => import('components/cooperation/Cooperation.vue'),
+  	FreeSettled: () => import('components/freeSettled/FreeSettled.vue'),
+  	Contact: () => import('components/contact/Contact')
   }
 }
 </script>
