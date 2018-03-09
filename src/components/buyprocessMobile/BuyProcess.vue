@@ -67,7 +67,21 @@ export default {
     font-size: 18px;
     color: #333333;
     text-align: center;
+    position: relative;
+
+    &:after{
+      content: "";
+      display: block;
+      position: absolute;
+      bottom: -8px;
+      width: 26px;
+      height: 2px;
+      background-color: #D2D2D2;
+      left: 50%;
+      transform: translateX(-50%);
+    }
   }
+  
   .process-content {
     margin-top: 34px;
     .process-item {

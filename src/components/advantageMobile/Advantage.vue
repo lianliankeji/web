@@ -88,7 +88,7 @@ export default {
     align-items: center;
 
     &:nth-of-type(1) {
-      border-bottom: 2px #DDDDDD solid;
+      border-bottom: 1px #DDDDDD solid;
       padding-bottom: 40px;
 
       .elem:nth-of-type(2) {
@@ -122,6 +122,19 @@ export default {
       font-size: 18px;
       color: #333333;
       text-align: center;
+      position: relative;
+    }
+
+    .title:after{
+      content: "";
+      display: block;
+      position: absolute;
+      bottom: -8px;
+      width: 26px;
+      height: 2px;
+      background-color: #D2D2D2;
+      left: 50%;
+      transform: translateX(-50%);
     }
 
     .elem{
@@ -142,17 +155,5 @@ export default {
     }
   }
   
-	// @include Background('goodsBg.png');
-  // .content{
-  //   position: relative;
-  //   @include Background('goodsPot.png',right center);
-  //   .side-header{
-  //     position: absolute;
-  //     right: 230px;
-  //     top: 50%;
-  //     transform: translateY(-50%);
-  //     -webkit-transform: translateY(-50%);
-  //   }
-  // }
 }
 </style>

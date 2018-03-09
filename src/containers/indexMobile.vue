@@ -4,13 +4,9 @@
     <advantage />
     <process />
     <about />
-    <cooperation />
-    <!-- <advantage />
-    <ability />
-    <process />
-    <cooperation />
+    <!-- <cooperation /> -->
     <freeSettled />
-    <contact />  -->
+    <contact />
   </div>
 </template>
 
@@ -36,8 +32,8 @@ export default {
     Process: () => import('components/buyprocessMobile/BuyProcess.vue'),
     About: () => import('components/aboutmobile/About.vue'),
   	Cooperation: () => import('components/cooperationMobile/Cooperation.vue'),
-  	FreeSettled,
-  	Contact
+  	FreeSettled: () => import('components/freeSettledMobile/FreeSettled.vue'),
+  	Contact: () => import('components/contactMobile/Contact')
   }
 }
 </script>

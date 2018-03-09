@@ -5,7 +5,7 @@
         <img class="header-logo" src="../../assets/image/logo.png">
         <div class="header-slogan">
           <div class="header-slogan-title">新零售 新生活</div>
-          <div class="header-link">kuaidian.lianlianchains.com</div>
+          <div class="header-link">store.lianlianchains.com</div>
         </div>
       </div>
       <div class="header-right">

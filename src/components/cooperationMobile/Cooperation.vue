@@ -2,9 +2,8 @@
   <div class="buy-ability">
       <h3 class="header">合作企业</h3>
       <ul class="process-content ">
-        <li class="process-item" v-for="item in abilityList">
-          <img :src='item.img' />
-          <span style="opacity: 0;" class="info">{{item.info}}</span>
+        <li class="process-item" v-for="(item,index) in abilityList">
+          <img :class="'img'+ index" :src='item.img' />
         </li>
       </ul>
   </div>
@@ -52,6 +51,45 @@ export default {
   background-color: #fff;
   .header{
     text-align: center;
+    font-size: 18px;
+    position: relative;
+
+    &:after{
+      content: "";
+      display: block;
+      position: absolute;
+      bottom: -8px;
+      width: 26px;
+      height: 2px;
+      background-color: #D2D2D2;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  .process-content{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 36px;
+    .process-item{
+      .img0{
+        width: 77px;
+        height: 25px;
+        display: inline-block;
+      }
+      .img1{
+        width: 102px;
+        height: 21px;
+        display: inline-block;
+      }
+      .img2{
+        width: 80px;
+        height: 21px;
+        display: inline-block;
+      }
+    }
   }
   // .content{
   //   margin: 0 auto;

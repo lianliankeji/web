@@ -7,7 +7,7 @@
       </div>
       <div class="content flex-row">
         <div>
-          <img class="code" src="../../assets/image/settleCode.png" />
+          <img class="code" src="../../assets/imageMobile/qrcode.png" />
           <div class="info">
             <span class="info-left">扫二维码</span>
             <span>快速申请</span>

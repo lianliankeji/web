@@ -6,7 +6,7 @@
     <advantage />
     <ability />
     <process />
-    <cooperation />
+    <!-- <cooperation /> -->
     <freeSettled />
     <contact />
   </div>
